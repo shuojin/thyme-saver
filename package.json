@@ -15,6 +15,7 @@
   "author": "Shuo Jin",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",

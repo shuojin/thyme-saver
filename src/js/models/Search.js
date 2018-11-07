@@ -1,4 +1,5 @@
 import axios from 'axios'
+import apiConfig from '../apiKeys';
 
 export default class Search {
     constructor(query) {
@@ -6,11 +7,8 @@ export default class Search {
     }
 
     async getResults() {
-        const proxy = 'http://cors-anywhere.herokuapp.com/';
-        const appId = '--------';
-        const apiKey = '-------------';
         try {         
-            const output = await axios(`${proxy}https://api.edamam.com/search?q=${this.query}&app_id=${appId}&app_key=${apiKey}`);
+            const output = await axios(`${apiConfig.proxy}https://api.edamam.com/search?q=${this.query}&app_id=${apiConfig.appId}&app_key=${apiConfig.apiKey}`);
             this.result = output.data.hits;
         } catch (error) {
             alert(error);
