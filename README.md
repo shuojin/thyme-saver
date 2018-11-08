@@ -7,4 +7,5 @@ Install with ```npm install```.
 Contact for API keys. 
 
 ## Example
+Search results for "pizza". 
 ![Home](https://screenshotscdn.firefoxusercontent.com/images/8ad39051-98e0-4cea-b05c-08c059ddf23d.png)
